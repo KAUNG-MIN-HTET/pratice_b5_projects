@@ -1,0 +1,304 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Source+Sans+Pro&display=swap');
+
+:root{
+    --org: #fc5185;
+    --grey: #777;
+    --link: #22d1ee;
+}
+
+body{
+    margin: 0;
+
+}
+
+
+.body-center{
+    width: 90%;
+    height: 100vh;
+    margin: auto;
+
+
+}
+
+nav{
+    width: 100%;
+    height: 100px;
+    border-bottom: 2px solid #888;
+
+    display: flex;
+    justify-content: space-between;
+}
+
+nav h1{
+    color: var(--org);
+    font-size: 40px;
+    text-transform: capitalize;
+    font-family: 'Roboto', sans-serif;
+    letter-spacing: 2px;
+    margin: 0;
+    line-height: 100px;
+
+}
+
+
+nav .nav a{
+    display: inline-block;
+    margin-left: 40px;
+    line-height: 100px;
+    text-decoration: none;
+    color: var(--grey);
+    font-family: 'Source Sans Pro', sans-serif;
+    font-weight: 600;
+
+    position: relative;
+
+    transition: all 0.5s;
+}
+
+nav .nav a:hover{
+    color: white;
+}
+
+nav .nav a::before{
+    content: '';
+
+    width: 130%;
+    height: 40px;
+    background: var(--org);
+    border-radius: 15px;
+
+    position: absolute;
+    top: 30%;
+    right: -15%;
+
+    z-index: -5;
+
+    transform: scale(0);
+
+    transition: all 0.5s;
+}
+
+nav .nav a:hover::before{
+    transform: scale(1);
+}
+
+
+
+.float-left{
+    width: 65%;
+    float: left;
+    /* border: 1px solid black; */
+}
+
+.float-left h2{
+    margin: 50px 0;
+    font-family: 'Roboto', sans-serif;
+    background: -webkit-linear-gradient(rgb(255, 0, 153), rgb(73, 50, 64));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-family: 'Nunito', sans-serif;
+}
+
+.float-left label{
+    display: block;
+    color: #071e3d;
+    font-weight: 600;
+
+    padding-left: 10px;
+    margin-top: 20px;
+}
+
+.float-left input{
+    width: 90%;
+    height: 30px;
+    outline: none;
+    border: none;
+    border-bottom: 2px solid rgb(177, 173, 173);
+    margin-left: 10px;
+
+}
+
+.float-left input::placeholder{
+    opacity: 0.7;
+}
+
+.float-left .btn{
+    display: inline-block;
+    color: #fff;
+    background: linear-gradient(rgb(255, 0, 153), rgb(73, 50, 64));
+    font-size: 14px;
+    padding: 10px 20px;
+    margin: 10px;
+    text-decoration: none;
+    font-family: sans-serif;
+
+    overflow: hidden;
+
+    position: relative;
+}
+
+.float-left .btn::before{
+    content: '';
+
+    width: 100%;
+    height: 50%;
+    background-color: #fff;
+
+    position: absolute;
+    bottom: 0;
+    left: 0;
+
+    transform: translateX(-120%) translateY(120%) rotate(45deg);
+
+    transition: all 0.5s;
+}
+
+.float-left .btn:hover::before{
+    transform: translateX(120%) translateY(-120%) rotate(45deg);     
+}
+
+.float-left span{
+    color: var(--org);
+    margin-left: 10px;
+}
+
+.float-left .fp{
+    text-decoration: none;
+    color: var(--link);
+}
+
+.float-right{
+    width: 34%;
+    height: 82vh;
+    float: right;
+    /* border: 1px solid black; */
+    overflow: scroll;
+}
+
+.float-right h2{
+    background: -webkit-linear-gradient(rgb(255, 0, 153), rgb(73, 50, 64));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-family: 'Nunito', sans-serif;
+    letter-spacing: 2px;
+    font-family: 'Roboto', sans-serif;
+    text-align: center;
+}
+
+.box1{
+    width: 100%;
+    height: 150px;
+    border-bottom: 1px solid var(--grey);
+}
+
+.box1 img{
+    width: 150px;
+    float: left;
+}
+
+.box1 .para{
+    width: 240px;
+    float: right;
+    color: #85203b;
+}
+
+
+.box1 .clear{
+    clear: both;
+    padding-top: 10px;
+    color: var(--grey);
+}
+
+.box1:hover{
+    cursor: pointer;
+    opacity: 0.7;
+}
+
+.box2{
+    width: 100%;
+    height: 150px;
+    border-bottom: 1px solid var(--grey);
+}
+
+.box2 img{
+    width: 150px;
+    float: left;
+}
+
+.box2 .para{
+    width: 240px;
+    float: right;
+    color: #85203b;
+}
+
+
+.box2 .clear{
+    clear: both;
+    padding-top: 10px;
+    color: var(--grey);
+}
+
+.box2:hover{
+    cursor: pointer;
+    opacity: 0.7;
+}
+
+
+.box3{
+    width: 100%;
+    height: 150px;
+    border-bottom: 1px solid var(--grey);
+}
+
+.box3 img{
+    width: 150px;
+    float: left;
+}
+
+.box3 .para{
+    width: 240px;
+    float: right;
+    color: #85203b;
+}
+
+
+.box3 .clear{
+    clear: both;
+    padding-top: 10px;
+    color: var(--grey);
+}
+
+.box3:hover{
+    cursor: pointer;
+    opacity: 0.7;
+}
+
+.box4{
+    width: 100%;
+    height: 150px;
+    border-bottom: 1px solid var(--grey);
+}
+
+.box4 img{
+    width: 150px;
+    float: left;
+}
+
+.box4 .para{
+    width: 240px;
+    float: right;
+    color: #85203b;
+}
+
+
+.box4 .clear{
+    clear: both;
+    padding-top: 10px;
+    color: var(--grey);
+}
+
+.box4:hover{
+    cursor: pointer;
+    opacity: 0.7;
+}

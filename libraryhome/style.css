@@ -1,0 +1,177 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Nunito@1&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Source+Sans+Pro&display=swap');
+
+
+:root{
+    --org: #fc5185;
+    --grey: #777;
+    --link: #22d1ee;
+}
+
+body{
+    margin: 0;
+
+}
+
+
+.body-center{
+    width: 90%;
+    height: 100vh;
+    margin: auto;
+
+
+}
+
+nav{
+    width: 100%;
+    height: 100px;
+    border-bottom: 2px solid #888;
+
+    display: flex;
+    justify-content: space-between;
+}
+
+nav h1{
+    color: var(--org);
+    font-size: 40px;
+    text-transform: capitalize;
+    font-family: 'Roboto', sans-serif;
+    letter-spacing: 2px;
+    margin: 0;
+    line-height: 100px;
+
+}
+
+
+nav .nav a{
+    display: inline-block;
+    margin-left: 40px;
+    line-height: 100px;
+    text-decoration: none;
+    color: var(--grey);
+    font-family: 'Source Sans Pro', sans-serif;
+    font-weight: 600;
+
+    position: relative;
+
+    transition: all 0.5s;
+}
+
+nav .nav a:hover{
+    color: white;
+}
+
+nav .nav a::before{
+    content: '';
+
+    width: 130%;
+    height: 40px;
+    background: var(--org);
+    border-radius: 15px;
+
+    position: absolute;
+    top: 30%;
+    right: -15%;
+
+    z-index: -5;
+
+    transform: scale(0);
+
+    transition: all 0.5s;
+}
+
+nav .nav a:hover::before{
+    transform: scale(1);
+}
+
+.float-left{
+    width: 60%;
+    height: 80vh;
+    float: left;
+
+    position: relative;
+}
+
+.float-left .head{
+    color: #222;
+    font-family: 'Roboto', sans-serif;
+
+    margin-top: 50px;
+}
+
+.float-left .big-font{
+    color: #222;
+    font-size: 60px;
+    font-weight: 600;
+    letter-spacing: 2px;
+    font-family: 'Nunito', sans-serif;
+
+}
+
+.float-left .big-font span{
+    display: inline-block;
+    width: 65px;
+    height: 65px;
+
+    background-color: #e7b3b3;
+    border-radius: 50%;
+    text-align: center;
+    line-height: 65px;
+
+    animation: rotate 2s infinite linear;
+}
+
+@keyframes rotate{
+    from {
+        transform: rotate(0deg);
+    }
+
+    to {
+        transform: rotate(1turn);
+    }
+}
+
+.input{
+    width: 90%;
+    height: 30px;
+    border-radius: 20px;
+    border: none;
+    outline: none;
+    background-color: #fffeb8;
+    padding-left: 30px;
+
+    transition: all 0.3s;
+
+}
+
+.input:focus{
+    box-shadow: 0 0 20px rgb(167, 166, 166);
+}
+
+.float-left a{
+    color: #000;
+    text-decoration: none;
+    padding: 8px 16px;
+    background-color: #c86f5e;
+    border-radius: 20px;
+
+    position: absolute;
+    top: 395px;
+    right: 40px;
+
+    transition: all 0.3s;
+}
+
+.float-left a:hover{
+    box-shadow: 0 0 15px #c86f5e;
+}
+
+.body-center img{
+    width: 550px;
+    position: absolute;
+    top: 34%;
+    left: 55%;
+
+    z-index: -1;
+}
